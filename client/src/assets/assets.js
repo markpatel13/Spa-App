@@ -83,10 +83,11 @@ export const cities = [
 
 // Exclusive Offers Dummy Data
 export const exclusiveOffers = [
-    { _id: 1, title: "Summer Escape Package", description: "Enjoy a complimentary night and daily breakfast", priceOff: 25, expiryDate: "Aug 31", image: exclusiveOfferCardImg1 },
-    { _id: 2, title: "Romantic Getaway", description: "Special couples package including spa treatment", priceOff: 20, expiryDate: "Sep 20", image: exclusiveOfferCardImg2 },
-    { _id: 3, title: "Luxury Retreat", description: "Book 60 days in advance and save on your stay at any of our luxury properties worldwide.", priceOff: 30, expiryDate: "Sep 25", image: exclusiveOfferCardImg3 },
+    { _id: 1, title: "Summer Glow Therapy", description: "Rejuvenating full-body massage with complimentary herbal steam", priceOff: 25, expiryDate: "Aug 31", image: exclusiveOfferCardImg1 },
+    { _id: 2, title: "Couple’s Bliss Package", description: "Relaxing couple’s aromatherapy session with a free foot spa", priceOff: 20, expiryDate: "Sep 20", image: exclusiveOfferCardImg2 },
+    { _id: 3, title: "Luxury Wellness Retreat", description: "Book early and save big on premium therapies like hot stone massage & body scrubs", priceOff: 30, expiryDate: "Sep 25", image: exclusiveOfferCardImg3 },
 ]
+
 
 // Testimonials Dummy Data
 export const testimonials = [
@@ -140,14 +141,14 @@ export const hotelDummyData = {
     "__v": 0
 }
 
-// Rooms Dummy Data
+// Spa Therapies Dummy Data
 export const roomsDummyData = [
     {
         "_id": "67f7647c197ac559e4089b96",
         "hotel": hotelDummyData,
-        "roomType": "Double Bed",
+        "roomType": "Aromatherapy Massage",
         "pricePerNight": 399,
-        "amenities": ["Room Service", "Mountain View", "Pool Access"],
+        "amenities": ["Essential Oils", "Relaxation Music", "Complimentary Herbal Tea"],
         "images": [roomImg1, roomImg2, roomImg3, roomImg4],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:26:04.013Z",
@@ -157,9 +158,9 @@ export const roomsDummyData = [
     {
         "_id": "67f76452197ac559e4089b8e",
         "hotel": hotelDummyData,
-        "roomType": "Double Bed",
+        "roomType": "Hot Stone Therapy",
         "pricePerNight": 299,
-        "amenities": ["Room Service", "Mountain View", "Pool Access"],
+        "amenities": ["Heated Stones", "Aroma Candles", "Soothing Music"],
         "images": [roomImg2, roomImg3, roomImg4, roomImg1],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:25:22.593Z",
@@ -169,9 +170,9 @@ export const roomsDummyData = [
     {
         "_id": "67f76406197ac559e4089b82",
         "hotel": hotelDummyData,
-        "roomType": "Double Bed",
+        "roomType": "Detox Body Scrub",
         "pricePerNight": 249,
-        "amenities": ["Free WiFi", "Free Breakfast", "Room Service"],
+        "amenities": ["Organic Scrubs", "Steam Room Access", "Refreshing Drinks"],
         "images": [roomImg3, roomImg4, roomImg1, roomImg2],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:24:06.285Z",
@@ -181,9 +182,9 @@ export const roomsDummyData = [
     {
         "_id": "67f763d8197ac559e4089b7a",
         "hotel": hotelDummyData,
-        "roomType": "Single Bed",
+        "roomType": "Foot Reflexology",
         "pricePerNight": 199,
-        "amenities": ["Free WiFi", "Room Service", "Pool Access"],
+        "amenities": ["Essential Oils", "Foot Soak", "Relaxing Massage Chairs"],
         "images": [roomImg4, roomImg1, roomImg2, roomImg3],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:23:20.252Z",
