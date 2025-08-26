@@ -54,19 +54,19 @@ const Navbar = () => {
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-4 lg:gap-8">
                     {navLinks.map((link, i) => (
-                        <a key={i} href={link.path} className={`group flex flex-col gap-0.5 ${isScrolled ? "text-gray-700" : "text-black"}`}>
+                        <a key={i} href={link.path} className={`group flex flex-col gap-0.5 ${isScrolled ? "text-gray-700" : "text-white"}`}>
                             {link.name}
                             <div className={`${isScrolled ? "bg-gray-700" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
                         </a>
                     ))}
-                    <button className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${isScrolled ? 'text-black' : 'text-black'} transition-all`} onClick={()=>navigate('/admin')}>
+                    <button className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${isScrolled ? 'text-black' : 'text-white'} transition-all`} onClick={()=>navigate('/admin')}>
                         Dashboard
                     </button>
                 </div>
 
                 {/* Desktop Right */}
                 <div className="hidden md:flex items-center gap-4">
-                    <img src={assets.searchIcon} alt="search" className='invert h-7 transition-all duration-500' />
+                    <img src={assets.searchIcon} alt="search" className={`h-7 transition-all duration-500 ${isScrolled ? "invert" : ""}`} />
                     {user ?
                     (<UserButton>
                         <UserButton.MenuItems>
@@ -74,7 +74,7 @@ const Navbar = () => {
                         </UserButton.MenuItems>
                     </UserButton>)
                 :
-                (<button onClick={openSignIn} className={`px-8 py-2.5 rounded-full ml-4 transition-all duration-500 ${isScrolled ? "text-white bg-black" : "bg-blue-400 text-black"}`}>
+                (<button onClick={openSignIn} className={`px-8 py-2.5 rounded-full ml-4 transition-all duration-500 ${isScrolled ? "text-white bg-black" : "bg-black text-white"}`}>
                         Login
                     </button>)
                 

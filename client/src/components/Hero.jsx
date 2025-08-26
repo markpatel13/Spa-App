@@ -3,12 +3,12 @@ import { assets, cities } from '../assets/assets'
 
 const Hero = () => {
   return (
-    <div className='flex flex-col items-start justify-center px-6 md:px-16 lg:px-24 xl:px-32 text-black bg-[url("/src/assets/heroimage.jpg")] bg-no-repeat bg-cover bg-center h-screen'>
+    <div className='flex flex-col items-start justify-center px-6 md:px-16 lg:px-24 xl:px-32 text-white bg-[url("/src/assets/heroimage1.jpg")] bg-no-repeat bg-cover bg-center h-screen'>
         <p className='bg-[#49B9FF]/50 px-3.5 py-1 rounded-full mt-20'>The Best Spa Experience</p>
 
-        <h1 className='font-playfair text-2xl md:text-5xl md:text-[56px] md:leading-[56px] font-bold md:font-extrabold max-w-xl mt-4'>Get yourself into a whole new World !!</h1>
+        <h1 className='font-playfair text-2xl md:text-5xl md:text-[56px] md:leading-[56px] font-bold md:font-extrabold max-w-xl mt-4'>Nourish Your Body Soothe Your Soul!</h1>
 
-        <p className='max-w-130 mt-2 text-sm md:text-base'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam esse aliquid consequatur quam voluptates hic, magni harum quis eaque perspiciatis eius labore odit excepturi eligendi beatae impedit adipisci, facilis placeat facere sequi, ad fugit?</p>
+        <p className='max-w-130 mt-2 text-sm md:text-base'>"Indulge in serene luxury with our in-house spa treatments .Unwind recharge, and let every moment melt your stress away."</p>
 
         
     <form className='bg-white text-gray-500 rounded-lg px-6 py-4 mt-8 flex flex-col md:flex-row max-md:items-start gap-4 max-md:mx-auto'>
