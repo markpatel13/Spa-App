@@ -52,6 +52,8 @@ import AdminLayout from "./pages/admin/AdminLayout";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import Users from "./pages/admin/Users";
 import Bookings from "./pages/admin/Bookings";
+import About from "./components/About";
+import Testimonial from './components/Testimonial' 
 
 const App = () => {
   const isOwnerPath = useLocation().pathname.includes("owner");
@@ -70,6 +72,8 @@ const App = () => {
           <Route path="/rooms" element={<AllMassages />} />
           <Route path="/rooms/:id" element={<RoomDetails />} />
           <Route path="/my-bookings" element={<MyBookings />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/testimonials" element={<Testimonial />}/>
 
           {/* Admin Routes */}
           <Route path="/admin" element={<AdminLayout />}>
